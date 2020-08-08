@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>My Form</title>
+	<script type="text/javascript">
+		function check()
+		{	var name = document.form.Name.value; 
+			var age = document.form.Age.value;
+			var city = document.form.City.value;
+			var Gender = document.form.Gender.value;
+			var birthday = document.form.birthday.value;
+
+			document.writeln("Name  :  "+name);
+			document.writeln("<br>");
+			document.writeln("Age :    "+age);
+			document.writeln("<br>");
+			document.writeln("City :   "+city);
+			document.writeln("<br>");
+			document.writeln("Gender : "+Gender);
+			document.writeln("<br>");
+			document.writeln("birthday:"+birthday);
+		}
+	</script>
+	<style>
+		fieldset{
+			margin: 150px 500px;
+		}
+	</style>
+</head>
+<body>
+	<form name="form">
+		<fieldset>
+		<legend>Form</legend>
+		Name : <input type = "text" name = "Name"><br>
+		<br>
+		Age : <input type = "number" name = "Age"><br>
+		<br>
+		City : <select id="city" name="City">
+				<option>Ahmedabad</option>
+				<option>Rajkot</option>
+				<option>Junagdh</option>
+				<option>Surat</option>
+				</select><br>
+				<br>
+		Gender :<select id="Gender" name="Gender">
+				<option>Male</option>
+				<option>female</option>
+				</select><br>
+				<br>
+		Date of birth :<input type="Date" name="birthday"><br>
+		<br>
+		<button type = "submit" onclick='check()'>submit</button> 
+		</fieldset>
+	</form>
+</body>
+</html>
